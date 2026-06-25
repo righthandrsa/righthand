@@ -131,7 +131,7 @@ export default function Home() {
                 name: 'Full Access',
                 amount: '99',
                 period: 'per month',
-                features: ['All 10 modules unlocked', 'All topic areas included', 'Cancel anytime'],
+                features: ['All Modules Unlocked', 'All topic areas included', 'Cancel anytime'],
                 cta: 'Get full access',
                 href: '/pricing',
                 featured: true,

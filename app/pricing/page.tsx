@@ -63,7 +63,7 @@ export default function Pricing() {
               <div className="text-xs mb-6" style={{color: '#718096'}}>per month · cancel anytime</div>
               <ul className="space-y-3 mb-8">
                 {[
-                  'All 10 modules unlocked',
+                  'All Modules Unlocked',
                   'Motor Rights (2 modules)',
                   'Credit & Debt (4 modules)',
                   'Banking & Saving (2 modules)',

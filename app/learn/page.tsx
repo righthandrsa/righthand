@@ -83,7 +83,7 @@ export default function Learn() {
           <div className="mt-12 rounded-2xl p-8 text-center" style={{backgroundColor: '#1a2340'}}>
             <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#8fa8cc'}}>Unlock everything</p>
             <h3 className="text-2xl font-bold mb-3" style={{color: '#ffffff'}}>Full access for R99/month</h3>
-            <p className="text-sm mb-6" style={{color: '#8fa8cc'}}>All 10 modules, all 4 topic areas. Cancel anytime.</p>
+            <p className="text-sm mb-6" style={{color: '#8fa8cc'}}>All modules, all 4 topic areas. Cancel anytime.</p>
             <a href="#" className="inline-block px-8 py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get full access</a>
           </div>
 
