@@ -42,14 +42,13 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-3">
               {[
-                { label: 'Motor Rights', title: "Defective vehicle? Here's what the CPA says.", meta: '2 modules · 30 min total' },
-                { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?', meta: '4 modules · 55 min total' },
-                { label: 'Tenant Rights', title: 'Deposit rules your landlord must follow.', meta: '2 modules · 33 min total' },
+                { label: 'Motor Rights', title: "Defective vehicle? Here's what the CPA says." },
+                { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?' },
+                { label: 'Tenant Rights', title: 'Deposit rules your landlord must follow.' },
               ].map((card) => (
                 <div key={card.label} className="rounded-xl p-5" style={{backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)'}}>
                   <div className="text-xs font-bold tracking-widest uppercase mb-1" style={{color: '#8fa8cc'}}>{card.label}</div>
-                  <div className="font-semibold mb-1" style={{color: '#ffffff', fontSize: '0.95rem'}}>{card.title}</div>
-                  <div className="text-xs" style={{color: '#8fa8cc'}}>{card.meta}</div>
+                  <div className="font-semibold" style={{color: '#ffffff', fontSize: '0.95rem'}}>{card.title}</div>
                 </div>
               ))}
             </div>
