@@ -15,7 +15,7 @@ export default function Home() {
                 <span style={{color: '#b3d0f0'}}>Stand your ground.</span>
               </h1>
               <p className="text-lg mb-8 leading-relaxed" style={{color: '#8fa8cc', maxWidth: '460px'}}>
-                Righthand turns South African consumer law into plain-language lessons — covering motor, credit, banking, and rental rights.
+                RightHand turns South African consumer law into plain-language lessons covering motor, credit, banking, and tenant rights.
               </p>
               <div className="flex items-center gap-4">
                 <a href="/learn" className="px-7 py-3 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
@@ -27,7 +27,7 @@ export default function Home() {
               </div>
               <div className="flex gap-8 mt-10 pt-8" style={{borderTop: '1px solid #2d4a6e'}}>
                 <div>
-                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>9</div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>10</div>
                   <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>modules available</div>
                 </div>
                 <div>
@@ -43,8 +43,8 @@ export default function Home() {
             <div className="flex flex-col gap-3">
               {[
                 { label: 'Motor Rights', title: "Defective vehicle? Here's what the CPA says.", meta: '2 modules · 30 min total' },
-                { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?', meta: '4 modules · 50 min total' },
-                { label: 'Rental Rights', title: 'Deposit rules your landlord must follow.', meta: '1 module · 18 min' },
+                { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?', meta: '4 modules · 55 min total' },
+                { label: 'Tenant Rights', title: 'Deposit rules your landlord must follow.', meta: '2 modules · 33 min total' },
               ].map((card) => (
                 <div key={card.label} className="rounded-xl p-5" style={{backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)'}}>
                   <div className="text-xs font-bold tracking-widest uppercase mb-1" style={{color: '#8fa8cc'}}>{card.label}</div>
@@ -61,16 +61,16 @@ export default function Home() {
       <section style={{backgroundColor: '#1a5ea5', padding: '64px 0'}}>
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-10">
-            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.6)'}}>What you'll learn</div>
+            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.6)'}}>What you will learn</div>
             <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>Four areas of consumer rights</h2>
-            <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law — the CPA, NCA, RHA, and more.</p>
+            <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law: the CPA, NCA, RHA, PPRA, and more.</p>
           </div>
           <div className="grid gap-4" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
             {[
-              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance & dealer obligations.', href: '/learn' },
-              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports & debt review.', href: '/learn' },
+              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance and dealer obligations.', href: '/learn' },
+              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports and debt review.', href: '/learn' },
               { icon: '🏦', title: 'Banking & Saving', desc: 'TFSA accounts and savings products.', href: '/learn' },
-              { icon: '🏠', title: 'Rental Rights', desc: 'Tenant rights, deposits & the Tribunal.', href: '/learn' },
+              { icon: '🏠', title: 'Tenant Rights', desc: 'Tenant rights, deposits, the RHT and the PPRA.', href: '/learn' },
             ].map((topic) => (
               <a key={topic.title} href={topic.href} className="block rounded-2xl p-6 transition" style={{backgroundColor: 'rgba(255,255,255,0.11)', border: '1px solid rgba(255,255,255,0.18)'}}>
                 <div className="text-2xl mb-3">{topic.icon}</div>
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div className="grid gap-8" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
             {[
-              { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you — motor, credit, rental, and more.' },
+              { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you: motor, credit, banking, or tenant rights.' },
               { n: '2', title: 'Learn the law', desc: 'Clear modules written in plain language, no legal jargon.' },
               { n: '3', title: 'Know your rights', desc: 'Understand exactly what dealers, creditors, and landlords must do.' },
               { n: '4', title: 'Act with confidence', desc: 'Use our knowledge to stand up for yourself.' },
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-12">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#1a5ea5'}}>Pricing</div>
-            <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Start free. Upgrade when you're ready.</h2>
+            <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Start free. Upgrade when you are ready.</h2>
             <p className="mt-2 text-sm" style={{color: '#4a5568'}}>First module in every section is always free. No contracts, cancel anytime.</p>
           </div>
           <div className="grid gap-5 mx-auto" style={{gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '640px'}}>
@@ -131,7 +131,7 @@ export default function Home() {
                 name: 'Full Access',
                 amount: '99',
                 period: 'per month',
-                features: ['All 9 modules unlocked', 'All topic areas included', 'Cancel anytime'],
+                features: ['All 10 modules unlocked', 'All topic areas included', 'Cancel anytime'],
                 cta: 'Get full access',
                 href: '#',
                 featured: true,
