@@ -204,11 +204,9 @@ export default function BankSaving() {
                   <p className="text-xs font-bold tracking-widest uppercase" style={{color:'#8fa8cc'}}>Content contributor</p>
                 </div>
                 <div style={{backgroundColor:'#f0f5fc',padding:'20px'}}>
-                  <div className="rounded-xl flex items-center justify-center mb-4" style={{backgroundColor:'#000000',border:'1px solid #c5d8ef',height:'80px',padding:'12px'}}>
-                    <p className="text-xs font-bold text-center" style={{color:'#f97316'}}>SOUL FINANCIAL<br/><span style={{color:'#888780',fontWeight:400}}>logo placeholder</span></p>
-                  </div>
-                  <p className="font-bold text-sm mb-1" style={{color:'#1a2340'}}>Soul Financial</p>
-                  <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Rochelle Warries, CA(SA)</p>
+                  <div className="inline-block text-xs font-bold tracking-wide uppercase px-3 py-1 rounded mb-3" style={{backgroundColor:'#1a2340',color:'#b3d0f0'}}>Soul Financial</div>
+                  <p className="font-bold text-sm mb-1" style={{color:'#1a2340'}}>Rochelle Warries</p>
+                  <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Chartered Accountant CA(SA)</p>
                   <div className="space-y-2 text-xs" style={{color:'#4a5568'}}>
                     <div><a href="mailto:rrwarries@gmail.com" style={{color:'#1a5ea5'}}>rrwarries@gmail.com</a></div>
                     <div><a href="https://soulfinancial.co.za" target="_blank" rel="noopener noreferrer" style={{color:'#1a5ea5'}}>soulfinancial.co.za</a></div>
@@ -220,8 +218,8 @@ export default function BankSaving() {
               </div>
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
-                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Banking</p>
-                <a href="/learn/bank-tfsa" className="text-sm font-medium" style={{color:'#ffffff'}}>Tax-Free Savings Accounts →</a>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next module</p>
+                <a href="/learn/credit-report" className="text-sm font-medium" style={{color:'#ffffff'}}>Decoding Your Credit Report →</a>
               </div>
             </aside>
           </div>

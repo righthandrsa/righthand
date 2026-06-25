@@ -232,11 +232,9 @@ export default function MotorRights() {
                   <p className="text-xs font-bold tracking-widest uppercase" style={{color:'#8fa8cc'}}>Content contributor</p>
                 </div>
                 <div style={{backgroundColor:'#f0f5fc',padding:'20px'}}>
-                  <div className="rounded-xl flex items-center justify-center mb-4" style={{backgroundColor:'#ffffff',border:'1px solid #c5d8ef',height:'80px',padding:'12px'}}>
-                    <p className="text-xs font-bold text-center" style={{color:'#1a5ea5'}}>BEFORE YOU SIGN<br/><span style={{color:'#8fa8cc',fontWeight:400}}>logo placeholder</span></p>
-                  </div>
-                  <p className="font-bold text-sm mb-1" style={{color:'#1a2340'}}>Before You Sign</p>
-                  <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Mxolisi Mkhonza</p>
+                  <div className="inline-block text-xs font-bold tracking-wide uppercase px-3 py-1 rounded mb-3" style={{backgroundColor:'#1a2340',color:'#b3d0f0'}}>Before You Sign</div>
+                  <p className="font-bold text-sm mb-1" style={{color:'#1a2340'}}>Mxolisi Mkhonza</p>
+                  <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Consumer Rights Specialist</p>
                   <div className="space-y-2 text-xs" style={{color:'#4a5568'}}>
                     <div><a href="mailto:admin@beforeyousign.co.za" style={{color:'#1a5ea5'}}>admin@beforeyousign.co.za</a></div>
                     <div><a href="https://beforeyousign.co.za" target="_blank" rel="noopener noreferrer" style={{color:'#1a5ea5'}}>beforeyousign.co.za</a></div>
