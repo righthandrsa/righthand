@@ -27,8 +27,8 @@ export default function Home() {
               </div>
               <div className="flex gap-8 mt-10 pt-8" style={{borderTop: '1px solid #2d4a6e'}}>
                 <div>
-                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>Growing</div>
-                  <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>library</div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>10</div>
+                  <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>modules available</div>
                 </div>
                 <div>
                   <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>4</div>
