@@ -28,7 +28,7 @@ export default function RootLayout({
             </a>
             <div className="flex items-center gap-2">
               <a href="/learn" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Learn</a>
-              <a href="#" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
+              <a href="/about" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
               <a href="#" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Pricing</a>
               <a href="#" className="text-sm px-5 py-2 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get started</a>
             </div>
