@@ -16,8 +16,8 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'RightHand Contact Form <noreply@righthand.org.za>',
-        to: 'info@righthand.org.za',
+        from: 'RightHand Contact Form <noreply@send.righthand.org.za>',
+        to: 'contact@righthand.org.za',
         reply_to: email,
         subject: `RightHand contact: ${subject || 'General enquiry'} — from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
@@ -27,6 +27,8 @@ export async function POST(request: Request) {
     if (res.ok) {
       return NextResponse.json({ success: true });
     } else {
+      const errorBody = await res.json();
+      console.error('Resend error:', errorBody);
       return NextResponse.json({ error: 'Failed to send' }, { status: 500 });
     }
   } catch {

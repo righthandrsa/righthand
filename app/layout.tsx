@@ -17,20 +17,20 @@ export default function RootLayout({
 
         {/* NAV */}
         <nav style={{backgroundColor: '#1a2340', borderBottom: '1px solid #2d4a6e', position: 'sticky', top: 0, zIndex: 50}}>
-          <div className="flex items-center justify-between px-8 py-4 max-w-6xl mx-auto">
+          <div className="flex items-center justify-between px-5 py-4 max-w-6xl mx-auto">
             <a href="/" className="flex items-center gap-3">
               <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
                 <path d="M50 5 L90 20 L90 55 C90 75 70 90 50 97 C30 90 10 75 10 55 L10 20 Z" fill="#1a5ea5"/>
                 <path d="M35 50 L46 62 L67 40" stroke="white" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
               </svg>
               <span className="text-xl font-bold" style={{color: '#ffffff'}}>RightHand</span>
-              <span className="text-sm" style={{color: '#8fa8cc'}}>.org.za</span>
+              <span className="text-sm hidden sm:inline" style={{color: '#8fa8cc'}}>.org.za</span>
             </a>
-            <div className="flex items-center gap-2">
-              <a href="/learn" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Learn</a>
-              <a href="/about" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
-              <a href="#" className="text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Pricing</a>
-              <a href="#" className="text-sm px-5 py-2 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get started</a>
+            <div className="flex items-center gap-1 sm:gap-2">
+              <a href="/learn" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Learn</a>
+              <a href="/about" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
+              <a href="/pricing" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Pricing</a>
+              <a href="/pricing" className="text-sm px-4 py-2 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get started</a>
             </div>
           </div>
         </nav>
@@ -42,9 +42,9 @@ export default function RootLayout({
 
         {/* FOOTER */}
         <footer style={{backgroundColor: '#1a2340', borderTop: '1px solid #2d4a6e', padding: '48px 0 28px'}}>
-          <div className="max-w-6xl mx-auto px-8">
-            <div className="grid gap-12 mb-10" style={{gridTemplateColumns: '2fr 1fr 1fr 1fr'}}>
-              <div>
+          <div className="max-w-6xl mx-auto px-5 sm:px-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-12 mb-10">
+              <div className="col-span-2 sm:col-span-1">
                 <div className="flex items-center gap-2 mb-3">
                   <svg width="22" height="22" viewBox="0 0 100 100" fill="none">
                     <path d="M50 5 L90 20 L90 55 C90 75 70 90 50 97 C30 90 10 75 10 55 L10 20 Z" fill="#1a5ea5"/>
@@ -57,9 +57,9 @@ export default function RootLayout({
                 </p>
               </div>
               {[
-                { heading: 'Learn', links: [['Motor Rights', '/learn'], ['Credit & Debt', '/learn'], ['Banking', '/learn'], ['Tenant Rights', '/learn']] },
-                { heading: 'Platform', links: [['About', '#'], ['Pricing', '#'], ['Blog', '#'], ['Contact', '#']] },
-                { heading: 'Legal', links: [['Terms of Use', '#'], ['Privacy Policy', '#'], ['Disclaimer', '#']] },
+                { heading: 'Learn', links: [['Motor Rights', '/learn#motor-rights'], ['Credit & Debt', '/learn#credit-debt'], ['Banking', '/learn#banking-saving'], ['Tenant Rights', '/learn#tenant-rights']] },
+                { heading: 'Platform', links: [['About', '/about'], ['Pricing', '/pricing'], ['Blog', '#'], ['Contact', '/contact']] },
+                { heading: 'Legal', links: [['Terms of Use', '/terms'], ['Privacy Policy', '/privacy'], ['Disclaimer', '/disclaimer']] },
               ].map((col) => (
                 <div key={col.heading}>
                   <h5 className="text-xs font-bold tracking-widest uppercase mb-4" style={{color: '#b3d0f0'}}>{col.heading}</h5>

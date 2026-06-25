@@ -3,21 +3,21 @@ export default function Home() {
     <main>
 
       {/* Hero */}
-      <section style={{backgroundColor: '#1a2340', padding: '80px 0 72px'}}>
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="grid gap-12" style={{gridTemplateColumns: '1fr 1fr', alignItems: 'center'}}>
+      <section style={{backgroundColor: '#1a2340', padding: '64px 0 56px'}}>
+        <div className="max-w-6xl mx-auto px-5 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12" style={{alignItems: 'center'}}>
             <div>
               <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-5 px-3 py-1 rounded-full" style={{backgroundColor: 'rgba(26,94,165,0.25)', border: '1px solid rgba(26,94,165,0.5)', color: '#b3d0f0'}}>
                 South African Consumer Rights
               </div>
-              <h1 className="text-5xl font-bold mb-5 leading-tight" style={{color: '#ffffff', letterSpacing: '-0.02em'}}>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-5 leading-tight" style={{color: '#ffffff', letterSpacing: '-0.02em'}}>
                 Know your rights.<br />
                 <span style={{color: '#b3d0f0'}}>Stand your ground.</span>
               </h1>
               <p className="text-lg mb-8 leading-relaxed" style={{color: '#8fa8cc', maxWidth: '460px'}}>
                 RightHand turns South African consumer law into plain-language lessons covering motor, credit, banking, and tenant rights.
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
                 <a href="/learn" className="px-7 py-3 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
                   Explore modules →
                 </a>
@@ -59,18 +59,18 @@ export default function Home() {
 
       {/* Topics band */}
       <section style={{backgroundColor: '#1a5ea5', padding: '64px 0'}}>
-        <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-10">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.6)'}}>What you will learn</div>
             <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>Four areas of consumer rights</h2>
             <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law: the CPA, NCA, RHA, PPRA, and more.</p>
           </div>
-          <div className="grid gap-4" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance and dealer obligations.', href: '/learn' },
-              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports and debt review.', href: '/learn' },
-              { icon: '🏦', title: 'Banking & Saving', desc: 'TFSA accounts and savings products.', href: '/learn' },
-              { icon: '🏠', title: 'Tenant Rights', desc: 'Tenant rights, deposits, the RHT and the PPRA.', href: '/learn' },
+              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance and dealer obligations.', href: '/learn#motor-rights' },
+              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports and debt review.', href: '/learn#credit-debt' },
+              { icon: '🏦', title: 'Banking & Saving', desc: 'TFSA accounts and savings products.', href: '/learn#banking-saving' },
+              { icon: '🏠', title: 'Tenant Rights', desc: 'Tenant rights, deposits, the RHT and the PPRA.', href: '/learn#tenant-rights' },
             ].map((topic) => (
               <a key={topic.title} href={topic.href} className="block rounded-2xl p-6 transition" style={{backgroundColor: 'rgba(255,255,255,0.11)', border: '1px solid rgba(255,255,255,0.18)'}}>
                 <div className="text-2xl mb-3">{topic.icon}</div>
@@ -84,12 +84,12 @@ export default function Home() {
 
       {/* How it works */}
       <section id="how" style={{backgroundColor: '#ffffff', padding: '72px 0'}}>
-        <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-12">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#1a5ea5'}}>Simple process</div>
             <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Learn in four steps</h2>
           </div>
-          <div className="grid gap-8" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you: motor, credit, banking, or tenant rights.' },
               { n: '2', title: 'Learn the law', desc: 'Clear modules written in plain language, no legal jargon.' },
@@ -110,13 +110,13 @@ export default function Home() {
 
       {/* Pricing strip */}
       <section style={{backgroundColor: '#e8f0fa', borderTop: '1px solid #c5d8ef', borderBottom: '1px solid #c5d8ef', padding: '72px 0'}}>
-        <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-12">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#1a5ea5'}}>Pricing</div>
             <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Start free. Upgrade when you are ready.</h2>
             <p className="mt-2 text-sm" style={{color: '#4a5568'}}>First module in every section is always free. No contracts, cancel anytime.</p>
           </div>
-          <div className="grid gap-5 mx-auto" style={{gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '640px'}}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-auto" style={{maxWidth: '640px'}}>
             {[
               {
                 name: 'Free',
@@ -133,7 +133,7 @@ export default function Home() {
                 period: 'per month',
                 features: ['All 10 modules unlocked', 'All topic areas included', 'Cancel anytime'],
                 cta: 'Get full access',
-                href: '#',
+                href: '/pricing',
                 featured: true,
                 badge: 'Most popular',
               },

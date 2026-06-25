@@ -54,7 +54,7 @@ export default function Learn() {
         <div className="max-w-4xl mx-auto px-8 py-12">
           <div className="space-y-12">
             {sections.map((section) => (
-              <div key={section.title}>
+              <div key={section.title} id={section.title.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}>
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-2xl">{section.emoji}</span>
                   <h2 className="text-xl font-bold" style={{color: '#1a2340'}}>{section.title}</h2>

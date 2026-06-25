@@ -10,7 +10,7 @@ export default function PPRA() {
       </div>
       <div style={{backgroundColor:'#ffffff'}}>
         <div className="max-w-6xl mx-auto px-8 py-12">
-          <div style={{display:'grid',gridTemplateColumns:'1fr 260px',gap:'48px',alignItems:'start'}}>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_260px] gap-10 lg:gap-12" style={{alignItems:'start'}}>
             <article style={{minWidth:0,color:'#1a1a1a'}}>
 
               <div className="rounded-lg p-5 mb-6" style={{backgroundColor:'#E6F1FB',borderLeft:'4px solid #185FA5'}}>

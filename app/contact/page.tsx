@@ -46,7 +46,7 @@ export default function Contact() {
       {/* Body */}
       <div style={{backgroundColor: '#ffffff'}}>
         <div className="max-w-4xl mx-auto px-8 py-16">
-          <div className="grid gap-16" style={{gridTemplateColumns: '1fr 1fr', alignItems: 'start'}}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16" style={{alignItems: 'start'}}>
 
             {/* Left: form */}
             <div>
