@@ -1,77 +1,171 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between px-8 py-5 border-b border-gray-100">
-        <div className="flex items-center gap-3">
-          {/* Shield logo */}
-          <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 5 L90 20 L90 55 C90 75 70 90 50 97 C30 90 10 75 10 55 L10 20 Z" fill="#1a5ea5"/>
-            <path d="M35 50 L46 62 L67 40" stroke="white" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-          </svg>
-          <span style={{color: '#1a2340'}} className="text-xl font-bold tracking-tight">righthand</span>
-        </div>
-        <div className="flex items-center gap-6">
-          <a href="/learn" className="text-sm text-gray-500 hover:text-gray-900">Learn</a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-900">Forum</a>
-          <a href="#" className="text-sm text-gray-500 hover:text-gray-900">Templates</a>
-          <a href="#" style={{backgroundColor: '#1a5ea5'}} className="text-sm text-white px-5 py-2 rounded-full hover:opacity-90 transition">Sign up</a>
-        </div>
-      </nav>
+    <main>
 
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-8 pt-24 pb-20 text-center">
-        <p className="text-sm font-medium tracking-widest uppercase mb-5" style={{color: '#1a5ea5'}}>Know Your Rights</p>
-        <h1 className="text-5xl font-bold leading-tight mb-6" style={{color: '#1a2340'}}>
-          Your guide to consumer rights<br />in South Africa
-        </h1>
-        <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-          Structured learning on home ownership, renting, vehicles, banking, and credit — built for everyday South Africans.
-        </p>
-        <div className="flex items-center justify-center gap-4">
-          <a href="#" style={{backgroundColor: '#1a5ea5'}} className="text-white px-7 py-3 rounded-full font-medium hover:opacity-90 transition">
-            Start learning free
-          </a>
-          <a href="#" className="text-gray-600 px-7 py-3 rounded-full border border-gray-200 hover:border-gray-400 transition">
-            See all modules
-          </a>
-        </div>
-      </section>
-
-      {/* Topic cards */}
-      <section className="max-w-5xl mx-auto px-8 pb-24">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { title: "Home Ownership", desc: "Buying, transfers & title deeds" },
-            { title: "Renting", desc: "Leases, deposits & tenant rights" },
-            { title: "Motor Vehicles", desc: "Purchases, warranties & disputes" },
-            { title: "Banking & Credit", desc: "Credit scores, debt & your rights" },
-          ].map((topic) => (
-            <div key={topic.title} className="bg-gray-50 rounded-2xl p-6 cursor-pointer transition hover:shadow-md group">
-              <div className="w-8 h-8 rounded-full mb-4 flex items-center justify-center" style={{backgroundColor: '#e8f0fa'}}>
-                <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#1a5ea5'}}></div>
+      <section style={{backgroundColor: '#1a2340', padding: '80px 0 72px'}}>
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="grid gap-12" style={{gridTemplateColumns: '1fr 1fr', alignItems: 'center'}}>
+            <div>
+              <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-5 px-3 py-1 rounded-full" style={{backgroundColor: 'rgba(26,94,165,0.25)', border: '1px solid rgba(26,94,165,0.5)', color: '#b3d0f0'}}>
+                South African Consumer Rights
               </div>
-              <h3 className="font-semibold mb-2" style={{color: '#1a2340'}}>{topic.title}</h3>
-              <p className="text-sm text-gray-500">{topic.desc}</p>
+              <h1 className="text-5xl font-bold mb-5 leading-tight" style={{color: '#ffffff', letterSpacing: '-0.02em'}}>
+                Know your rights.<br />
+                <span style={{color: '#b3d0f0'}}>Stand your ground.</span>
+              </h1>
+              <p className="text-lg mb-8 leading-relaxed" style={{color: '#8fa8cc', maxWidth: '460px'}}>
+                Righthand turns South African consumer law into plain-language lessons — covering motor, credit, banking, and rental rights.
+              </p>
+              <div className="flex items-center gap-4">
+                <a href="/learn" className="px-7 py-3 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
+                  Explore modules →
+                </a>
+                <a href="#how" className="px-7 py-3 rounded-lg font-semibold" style={{color: '#ffffff', border: '2px solid rgba(255,255,255,0.3)'}}>
+                  How it works
+                </a>
+              </div>
+              <div className="flex gap-8 mt-10 pt-8" style={{borderTop: '1px solid #2d4a6e'}}>
+                <div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>9</div>
+                  <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>modules available</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>4</div>
+                  <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>topic areas</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>Free</div>
+                  <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>to start</div>
+                </div>
+              </div>
             </div>
-          ))}
+            <div className="flex flex-col gap-3">
+              {[
+                { label: 'Motor Rights', title: "Defective vehicle? Here's what the CPA says.", meta: '2 modules · 30 min total' },
+                { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?', meta: '4 modules · 50 min total' },
+                { label: 'Rental Rights', title: 'Deposit rules your landlord must follow.', meta: '1 module · 18 min' },
+              ].map((card) => (
+                <div key={card.label} className="rounded-xl p-5" style={{backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)'}}>
+                  <div className="text-xs font-bold tracking-widest uppercase mb-1" style={{color: '#8fa8cc'}}>{card.label}</div>
+                  <div className="font-semibold mb-1" style={{color: '#ffffff', fontSize: '0.95rem'}}>{card.title}</div>
+                  <div className="text-xs" style={{color: '#8fa8cc'}}>{card.meta}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="text-white text-center py-20 px-8" style={{backgroundColor: '#1a5ea5'}}>
-        <p className="text-sm tracking-widest uppercase opacity-80 mb-3">Simple pricing</p>
-        <h2 className="text-3xl font-bold mb-3">Full access for R99/month</h2>
-        <p className="opacity-75 mb-8">First module in every section is always free.</p>
-        <a href="#" className="bg-white font-semibold px-7 py-3 rounded-full hover:opacity-90 transition" style={{color: '#1a5ea5'}}>
-          Get started
-        </a>
+      {/* Topics band */}
+      <section style={{backgroundColor: '#1a5ea5', padding: '64px 0'}}>
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="text-center mb-10">
+            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.6)'}}>What you'll learn</div>
+            <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>Four areas of consumer rights</h2>
+            <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law — the CPA, NCA, RHA, and more.</p>
+          </div>
+          <div className="grid gap-4" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
+            {[
+              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance & dealer obligations.', href: '/learn' },
+              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports & debt review.', href: '/learn' },
+              { icon: '🏦', title: 'Banking & Saving', desc: 'TFSA accounts and savings products.', href: '/learn' },
+              { icon: '🏠', title: 'Rental Rights', desc: 'Tenant rights, deposits & the Tribunal.', href: '/learn' },
+            ].map((topic) => (
+              <a key={topic.title} href={topic.href} className="block rounded-2xl p-6 transition" style={{backgroundColor: 'rgba(255,255,255,0.11)', border: '1px solid rgba(255,255,255,0.18)'}}>
+                <div className="text-2xl mb-3">{topic.icon}</div>
+                <h3 className="font-bold mb-1" style={{color: '#ffffff', fontSize: '0.95rem'}}>{topic.title}</h3>
+                <p className="text-xs leading-relaxed" style={{color: 'rgba(255,255,255,0.65)'}}>{topic.desc}</p>
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center py-8 text-sm text-gray-400">
-        © 2026righthand · Know Your Rights
-      </footer>
+      {/* How it works */}
+      <section id="how" style={{backgroundColor: '#ffffff', padding: '72px 0'}}>
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="text-center mb-12">
+            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#1a5ea5'}}>Simple process</div>
+            <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Learn in four steps</h2>
+          </div>
+          <div className="grid gap-8" style={{gridTemplateColumns: 'repeat(4, 1fr)'}}>
+            {[
+              { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you — motor, credit, rental, and more.' },
+              { n: '2', title: 'Learn the law', desc: 'Clear modules written in plain language, no legal jargon.' },
+              { n: '3', title: 'Know your rights', desc: 'Understand exactly what dealers, creditors, and landlords must do.' },
+              { n: '4', title: 'Act with confidence', desc: 'Use our knowledge to stand up for yourself.' },
+            ].map((step) => (
+              <div key={step.n} className="text-center">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold" style={{backgroundColor: '#e8f0fa', border: '2px solid #c5d8ef', color: '#1a5ea5'}}>
+                  {step.n}
+                </div>
+                <h4 className="font-bold mb-2" style={{color: '#1a2340'}}>{step.title}</h4>
+                <p className="text-sm leading-relaxed" style={{color: '#4a5568'}}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing strip */}
+      <section style={{backgroundColor: '#e8f0fa', borderTop: '1px solid #c5d8ef', borderBottom: '1px solid #c5d8ef', padding: '72px 0'}}>
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="text-center mb-12">
+            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#1a5ea5'}}>Pricing</div>
+            <h2 className="text-3xl font-bold" style={{color: '#1a2340'}}>Start free. Upgrade when you're ready.</h2>
+            <p className="mt-2 text-sm" style={{color: '#4a5568'}}>First module in every section is always free. No contracts, cancel anytime.</p>
+          </div>
+          <div className="grid gap-5 mx-auto" style={{gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '640px'}}>
+            {[
+              {
+                name: 'Free',
+                amount: '0',
+                period: 'forever',
+                features: ['First module in every section', 'No sign-up required', 'Read at your own pace'],
+                cta: 'Start reading',
+                href: '/learn',
+                featured: false,
+              },
+              {
+                name: 'Full Access',
+                amount: '99',
+                period: 'per month',
+                features: ['All 9 modules unlocked', 'All topic areas included', 'Cancel anytime'],
+                cta: 'Get full access',
+                href: '#',
+                featured: true,
+                badge: 'Most popular',
+              },
+            ].map((plan) => (
+              <div key={plan.name} className="rounded-2xl p-7 bg-white" style={{border: plan.featured ? '2px solid #1a5ea5' : '1px solid #c5d8ef'}}>
+                {plan.badge && (
+                  <div className="inline-block text-xs font-bold tracking-wide uppercase px-3 py-1 rounded-full mb-4" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
+                    {plan.badge}
+                  </div>
+                )}
+                <h3 className="font-bold text-lg mb-1" style={{color: '#1a2340'}}>{plan.name}</h3>
+                <div className="flex items-baseline gap-1 my-3">
+                  <span className="text-sm font-semibold" style={{color: '#1a2340'}}>R</span>
+                  <span className="text-4xl font-bold" style={{color: '#1a2340'}}>{plan.amount}</span>
+                </div>
+                <div className="text-xs mb-5" style={{color: '#718096'}}>{plan.period}</div>
+                <ul className="space-y-2 mb-6">
+                  {plan.features.map((f) => (
+                    <li key={f} className="text-sm flex items-start gap-2" style={{color: '#4a5568'}}>
+                      <span style={{color: '#1a5ea5', fontWeight: 700}}>✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+                <a href={plan.href} className="block text-center py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
+                  {plan.cta}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
