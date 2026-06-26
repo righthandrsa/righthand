@@ -91,8 +91,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you: motor, credit, banking, or tenant rights.' },
-              { n: '2', title: 'Learn the law', desc: 'Clear modules written in plain language, no legal jargon.' },
-              { n: '3', title: 'Know your rights', desc: 'Understand exactly what dealers, creditors, and landlords must do.' },
+              { n: '2', title: 'Learn YOUR Rights', desc: 'Clear modules written in plain language, no legal jargon.' },
+              { n: '3', title: 'Know THEIR Obligations', desc: 'Understand exactly what dealers, creditors, and landlords must do.' },
               { n: '4', title: 'Act with confidence', desc: 'Use our knowledge to stand up for yourself.' },
             ].map((step) => (
               <div key={step.n} className="text-center">
