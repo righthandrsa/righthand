@@ -27,6 +27,7 @@ export default function PaystackButton() {
       amount: 9900,
       currency: 'ZAR',
       ref: `rh_${Date.now()}_${user.id}`,
+      plan: process.env.NEXT_PUBLIC_PAYSTACK_PLAN_CODE,
       metadata: {
         userId: user.id,
         custom_fields: [
