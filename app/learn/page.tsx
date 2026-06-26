@@ -62,7 +62,6 @@ export default function Learn() {
                         )}
                         <span className="font-medium text-sm" style={{color: '#1a2340'}}>{mod.title}</span>
                       </div>
-                      <span className="text-xs" style={{color: '#888780'}}>{mod.duration} read</span>
                     </a>
                   ))}
                 </div>
