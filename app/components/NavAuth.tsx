@@ -6,7 +6,12 @@ export default function NavAuth() {
   const { isSignedIn } = useAuth();
 
   if (isSignedIn) {
-    return <UserButton />;
+    return (
+      <div className="flex items-center gap-2">
+        <a href="/account" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Account</a>
+        <UserButton />
+      </div>
+    );
   }
 
   return (
