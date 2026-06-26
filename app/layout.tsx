@@ -16,6 +16,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
+      <head>
+        <link rel="preload" href="https://js.paystack.co/v1/inline.js" as="script" />
+      </head>
       <body className="min-h-full flex flex-col">
 
         {/* NAV */}
