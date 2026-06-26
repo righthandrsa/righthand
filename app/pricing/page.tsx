@@ -2,6 +2,7 @@
 
 import { useAuth } from '@clerk/nextjs';
 import PaystackButton from '../components/PaystackButton';
+import { sections, totalModules } from '../lib/modules';
 
 export default function Pricing() {
   const { isSignedIn } = useAuth();
@@ -70,10 +71,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {[
                   'All Modules Unlocked',
-                  'Motor Rights (2 modules)',
-                  'Credit & Debt (4 modules)',
-                  'Banking & Saving (2 modules)',
-                  'Tenant Rights (2 modules)',
+                  ...sections.map(s => `${s.title} (${s.modules.length} module${s.modules.length !== 1 ? 's' : ''})`),
                   'New modules as they are added',
                   'Cancel anytime, no contracts',
                 ].map((f) => (
@@ -110,7 +108,7 @@ export default function Pricing() {
               },
               {
                 q: 'What does Full Access include?',
-                a: 'All 10 modules across every topic area: 2 Motor, 4 Credit & Debt, 2 Banking, and 2 Tenant Rights. Plus any new modules added in future.',
+                a: `All ${totalModules} modules across every topic area: ${sections.map(s => `${s.modules.length} ${s.title}`).join(', ')}. Plus any new modules added in future.`,
               },
               {
                 q: 'Can I cancel anytime?',
