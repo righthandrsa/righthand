@@ -1,4 +1,10 @@
+'use client';
+
+import { useAuth } from '@clerk/nextjs';
+import PaystackButton from '../components/PaystackButton';
+
 export default function Pricing() {
+  const { isSignedIn } = useAuth();
   return (
     <main>
 
@@ -76,9 +82,13 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <a href="#" className="block text-center py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
-                Get full access
-              </a>
+              {isSignedIn ? (
+                <PaystackButton />
+              ) : (
+                <a href="/sign-up" className="block text-center py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
+                  Get full access
+                </a>
+              )}
             </div>
 
           </div>

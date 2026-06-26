@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from '@clerk/nextjs';
+import NavAuth from './components/NavAuth';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,6 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className="min-h-full flex flex-col">
 
@@ -30,7 +33,7 @@ export default function RootLayout({
               <a href="/learn" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Learn</a>
               <a href="/about" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
               <a href="/pricing" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Pricing</a>
-              <a href="/pricing" className="text-sm px-4 py-2 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get started</a>
+              <NavAuth />
             </div>
           </div>
         </nav>
@@ -82,5 +85,6 @@ export default function RootLayout({
 
       </body>
     </html>
+    </ClerkProvider>
   );
 }

@@ -132,7 +132,7 @@ export default function Home() {
                 period: 'per month',
                 features: ['All Modules Unlocked', 'All topic areas included', 'Cancel anytime'],
                 cta: 'Get full access',
-                href: '/pricing',
+                href: '/sign-up',
                 featured: true,
                 badge: 'Most popular',
               },

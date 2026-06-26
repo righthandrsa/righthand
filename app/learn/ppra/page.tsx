@@ -1,5 +1,7 @@
+import PaywallGate from '../../components/PaywallGate';
 export default function PPRA() {
   return (
+    <PaywallGate>
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
@@ -176,5 +178,6 @@ export default function PPRA() {
         </div>
       </div>
     </main>
+    </PaywallGate>
   );
 }
