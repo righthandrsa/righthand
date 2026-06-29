@@ -3,6 +3,8 @@ import { ClerkProvider } from '@clerk/nextjs';
 import NavAuth from './components/NavAuth';
 import "./globals.css";
 
+const COMING_SOON = true;
+
 export const metadata: Metadata = {
   title: "RightHand — Know Your Consumer Rights",
   description: "Plain-language South African consumer rights education covering motor, credit, banking, and tenant rights.",
@@ -13,6 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <ClerkProvider>
     <html lang="en">
@@ -22,7 +25,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
 
         {/* NAV */}
-        <nav style={{backgroundColor: '#1a2340', borderBottom: '1px solid #2d4a6e', position: 'sticky', top: 0, zIndex: 50}}>
+        {!COMING_SOON && <nav style={{backgroundColor: '#1a2340', borderBottom: '1px solid #2d4a6e', position: 'sticky', top: 0, zIndex: 50}}>
           <div className="flex items-center justify-between px-5 py-4 max-w-6xl mx-auto">
             <a href="/" className="flex items-center gap-3">
               <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
@@ -39,7 +42,7 @@ export default function RootLayout({
               <NavAuth />
             </div>
           </div>
-        </nav>
+        </nav>}
 
         {/* PAGE CONTENT */}
         <div className="flex-1">
@@ -47,7 +50,7 @@ export default function RootLayout({
         </div>
 
         {/* FOOTER */}
-        <footer style={{backgroundColor: '#1a2340', borderTop: '1px solid #2d4a6e', padding: '48px 0 28px'}}>
+        {!COMING_SOON && <footer style={{backgroundColor: '#1a2340', borderTop: '1px solid #2d4a6e', padding: '48px 0 28px'}}>
           <div className="max-w-6xl mx-auto px-5 sm:px-8">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-12 mb-10">
               <div className="col-span-2 sm:col-span-1">
@@ -84,7 +87,7 @@ export default function RootLayout({
               <p className="text-xs mt-3" style={{color: '#8fa8cc'}}>© 2026 RightHand · righthand.org.za</p>
             </div>
           </div>
-        </footer>
+        </footer>}
 
       </body>
     </html>
