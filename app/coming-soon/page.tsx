@@ -23,7 +23,7 @@ export default function ComingSoon() {
         Something good is coming.
       </h1>
       <p style={{ fontSize: '1rem', color: '#8fa8cc', textAlign: 'center', maxWidth: '420px', lineHeight: 1.7, marginBottom: '48px', fontFamily: 'system-ui, sans-serif' }}>
-        RightHand is a plain-language guide to your consumer rights in South Africa — covering motor, credit, banking, and tenant rights.
+        Right Hand is a plain-language guide to your consumer rights in South Africa — covering motor, credit, banking, and tenant rights.
       </p>
 
       {/* Divider */}

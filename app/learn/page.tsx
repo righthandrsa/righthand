@@ -24,7 +24,7 @@ export default function Learn() {
     <main>
       <div style={{backgroundColor: '#1a5ea5', padding: '56px 0 48px'}}>
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>RightHand</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>Right Hand</p>
           <h1 className="text-4xl font-bold mb-4" style={{color: '#ffffff'}}>What do you want to learn?</h1>
           <p className="text-lg" style={{color: 'rgba(255,255,255,0.75)'}}>First module in every section is free. Subscribe for R99/month to unlock everything.</p>
         </div>

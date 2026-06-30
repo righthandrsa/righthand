@@ -41,7 +41,7 @@ export default function Account() {
     <main>
       <div style={{backgroundColor: '#1a5ea5', padding: '56px 0 48px'}}>
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>RightHand</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>Right Hand</p>
           <h1 className="text-4xl font-bold mb-2" style={{color: '#ffffff'}}>Your Account</h1>
           <p style={{color: 'rgba(255,255,255,0.7)', fontSize: '0.88rem'}}>{user.primaryEmailAddress?.emailAddress}</p>
         </div>

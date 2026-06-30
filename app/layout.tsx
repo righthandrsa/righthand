@@ -6,7 +6,7 @@ import "./globals.css";
 const COMING_SOON = false;
 
 export const metadata: Metadata = {
-  title: "RightHand — Know Your Consumer Rights",
+  title: "Right Hand — Know Your Consumer Rights",
   description: "Plain-language South African consumer rights education covering motor, credit, banking, and tenant rights.",
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({
                 <path d="M50 5 L90 20 L90 55 C90 75 70 90 50 97 C30 90 10 75 10 55 L10 20 Z" fill="#1a5ea5"/>
                 <path d="M35 50 L46 62 L67 40" stroke="white" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
               </svg>
-              <span className="text-xl font-bold" style={{color: '#ffffff'}}>RightHand</span>
+              <span className="text-xl font-bold" style={{color: '#ffffff'}}>Right Hand</span>
               <span className="text-sm hidden sm:inline" style={{color: '#8fa8cc'}}>.org.za</span>
             </a>
             <div className="flex items-center gap-1 sm:gap-2">
@@ -60,7 +60,7 @@ export default function RootLayout({
                     <path d="M50 5 L90 20 L90 55 C90 75 70 90 50 97 C30 90 10 75 10 55 L10 20 Z" fill="#1a5ea5"/>
                     <path d="M35 50 L46 62 L67 40" stroke="white" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                   </svg>
-                  <span className="font-bold" style={{color: '#ffffff'}}>RightHand</span>
+                  <span className="font-bold" style={{color: '#ffffff'}}>Right Hand</span>
                 </div>
                 <p className="text-sm leading-relaxed" style={{color: '#8fa8cc', maxWidth: '260px'}}>
                   South Africa's consumer rights education platform. Know the law. Know your rights.
@@ -83,9 +83,9 @@ export default function RootLayout({
             </div>
             <div style={{borderTop: '1px solid #2d4a6e', paddingTop: '20px'}}>
               <p className="text-xs" style={{color: '#8fa8cc'}}>
-                <strong style={{color: '#b3d0f0'}}>Disclaimer:</strong> RightHand provides consumer rights education for informational purposes only. Nothing on this platform constitutes legal advice. Consult a qualified South African attorney for advice specific to your situation.
+                <strong style={{color: '#b3d0f0'}}>Disclaimer:</strong> Right Hand provides consumer rights education for informational purposes only. Nothing on this platform constitutes legal advice. Consult a qualified South African attorney for advice specific to your situation.
               </p>
-              <p className="text-xs mt-3" style={{color: '#8fa8cc'}}>© 2026 RightHand · righthand.org.za</p>
+              <p className="text-xs mt-3" style={{color: '#8fa8cc'}}>© 2026 Right Hand · righthand.org.za</p>
             </div>
           </div>
         </footer>}

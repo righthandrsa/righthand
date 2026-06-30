@@ -37,7 +37,7 @@ export default function Contact() {
       {/* Header band */}
       <div style={{backgroundColor: '#1a5ea5', padding: '56px 0 48px'}}>
         <div className="max-w-4xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>RightHand</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.65)'}}>Right Hand</p>
           <h1 className="text-4xl font-bold mb-4" style={{color: '#ffffff'}}>Get in touch</h1>
           <p className="text-lg" style={{color: 'rgba(255,255,255,0.75)'}}>Questions, feedback, or contributor enquiries. We would love to hear from you.</p>
         </div>
@@ -160,13 +160,13 @@ export default function Contact() {
 
               <div>
                 <h2 className="text-xl font-bold mb-4" style={{color: '#1a2340'}}>Contributor enquiries</h2>
-                <p className="text-sm leading-relaxed mb-4" style={{color: '#374151'}}>Are you a practitioner, specialist, or regulator who works in a consumer-facing field? If you are interested in contributing content to RightHand, we would love to hear from you.</p>
+                <p className="text-sm leading-relaxed mb-4" style={{color: '#374151'}}>Are you a practitioner, specialist, or regulator who works in a consumer-facing field? If you are interested in contributing content to Right Hand, we would love to hear from you.</p>
                 <p className="text-sm leading-relaxed" style={{color: '#374151'}}>Select "Contributor enquiry" in the subject field and tell us about your field and the knowledge you would like to share.</p>
               </div>
 
               <div className="rounded-lg p-5" style={{backgroundColor: '#e8f0fa', borderLeft: '4px solid #1a5ea5'}}>
                 <p className="font-bold text-sm mb-2" style={{color: '#0C447C'}}>Please note</p>
-                <p className="text-xs leading-relaxed" style={{color: '#1a1a1a'}}>RightHand is an education platform, not a law firm. We are unable to provide legal advice, act on your behalf, or assist with specific disputes. For dispute-specific assistance, please contact the relevant contributor or regulatory body directly.</p>
+                <p className="text-xs leading-relaxed" style={{color: '#1a1a1a'}}>Right Hand is an education platform, not a law firm. We are unable to provide legal advice, act on your behalf, or assist with specific disputes. For dispute-specific assistance, please contact the relevant contributor or regulatory body directly.</p>
               </div>
             </div>
 

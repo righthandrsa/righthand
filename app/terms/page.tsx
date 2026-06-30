@@ -15,15 +15,15 @@ export default function Terms() {
 
             <div className="rounded-lg p-5 mb-8" style={{backgroundColor: '#e8f0fa', borderLeft: '4px solid #1a5ea5'}}>
               <p className="text-sm leading-relaxed" style={{color: '#1a2340'}}>
-                Please read these Terms of Use carefully before using the RightHand platform. By accessing or using this website, you agree to be bound by these terms. If you do not agree, please do not use this platform.
+                Please read these Terms of Use carefully before using the Right Hand platform. By accessing or using this website, you agree to be bound by these terms. If you do not agree, please do not use this platform.
               </p>
             </div>
 
-            <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>1. About RightHand</h2>
-            <p className="text-gray-700 mb-4">RightHand (Pty) Ltd ("RightHand", "we", "us", or "our") is a private company registered in South Africa and based in Cape Town. We operate the website at righthand.org.za (the "Platform"), which provides consumer rights education and information to South African consumers.</p>
+            <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>1. About Right Hand</h2>
+            <p className="text-gray-700 mb-4">Right Hand (Pty) Ltd ("Right Hand", "we", "us", or "our") is a private company registered in South Africa and based in Cape Town. We operate the website at righthand.org.za (the "Platform"), which provides consumer rights education and information to South African consumers.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>2. Nature of the service</h2>
-            <p className="text-gray-700 mb-4">RightHand is an educational platform. All content published on this Platform is intended for general informational and educational purposes only. Nothing on this Platform constitutes legal advice, and nothing creates an attorney-client relationship between RightHand and any user.</p>
+            <p className="text-gray-700 mb-4">Right Hand is an educational platform. All content published on this Platform is intended for general informational and educational purposes only. Nothing on this Platform constitutes legal advice, and nothing creates an attorney-client relationship between Right Hand and any user.</p>
             <p className="text-gray-700 mb-4">For advice specific to your individual circumstances, you should consult a qualified South African attorney.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>3. Eligibility</h2>
@@ -44,13 +44,13 @@ export default function Terms() {
             </ul>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>6. Intellectual property</h2>
-            <p className="text-gray-700 mb-4">All content on the Platform, including text, graphics, logos, and module material, is owned by or licensed to RightHand (Pty) Ltd and is protected by South African copyright law. You may not copy, reproduce, or distribute any content without our express written permission.</p>
+            <p className="text-gray-700 mb-4">All content on the Platform, including text, graphics, logos, and module material, is owned by or licensed to Right Hand (Pty) Ltd and is protected by South African copyright law. You may not copy, reproduce, or distribute any content without our express written permission.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>7. Third-party contributors</h2>
-            <p className="text-gray-700 mb-4">Some modules include content contributed by third-party specialists. Contributor content is provided for educational purposes only. RightHand does not endorse and is not responsible for any services offered by contributors outside of this Platform.</p>
+            <p className="text-gray-700 mb-4">Some modules include content contributed by third-party specialists. Contributor content is provided for educational purposes only. Right Hand does not endorse and is not responsible for any services offered by contributors outside of this Platform.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>8. Limitation of liability</h2>
-            <p className="text-gray-700 mb-4">To the maximum extent permitted by South African law, RightHand (Pty) Ltd shall not be liable for any direct, indirect, incidental, or consequential loss or damage arising from your use of, or reliance on, any content on this Platform.</p>
+            <p className="text-gray-700 mb-4">To the maximum extent permitted by South African law, Right Hand (Pty) Ltd shall not be liable for any direct, indirect, incidental, or consequential loss or damage arising from your use of, or reliance on, any content on this Platform.</p>
             <p className="text-gray-700 mb-4">The Platform is provided "as is" without any warranty of accuracy, completeness, or fitness for a particular purpose. Consumer rights law is subject to change; always verify current legislation before acting.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>9. Changes to these terms</h2>

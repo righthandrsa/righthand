@@ -16,10 +16,10 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'RightHand Contact Form <noreply@send.righthand.org.za>',
+        from: 'Right Hand Contact Form <noreply@send.righthand.org.za>',
         to: 'contact@righthand.org.za',
         reply_to: email,
-        subject: `RightHand contact: ${subject || 'General enquiry'} — from ${name}`,
+        subject: `Right Hand contact: ${subject || 'General enquiry'} — from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
       }),
     });

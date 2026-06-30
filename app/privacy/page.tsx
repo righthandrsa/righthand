@@ -15,12 +15,12 @@ export default function Privacy() {
 
             <div className="rounded-lg p-5 mb-8" style={{backgroundColor: '#e8f0fa', borderLeft: '4px solid #1a5ea5'}}>
               <p className="text-sm leading-relaxed" style={{color: '#1a2340'}}>
-                RightHand (Pty) Ltd is committed to protecting your personal information in accordance with the Protection of Personal Information Act 4 of 2013 (POPIA). This Privacy Policy explains what information we collect, how we use it, and your rights as a data subject.
+                Right Hand (Pty) Ltd is committed to protecting your personal information in accordance with the Protection of Personal Information Act 4 of 2013 (POPIA). This Privacy Policy explains what information we collect, how we use it, and your rights as a data subject.
               </p>
             </div>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>1. Who we are</h2>
-            <p className="text-gray-700 mb-4">RightHand (Pty) Ltd ("RightHand", "we", "us") is the responsible party for personal information collected through righthand.org.za, based in Cape Town, South Africa. You can contact us at <a href="mailto:info@righthand.org.za" style={{color: '#1a5ea5'}}>info@righthand.org.za</a>.</p>
+            <p className="text-gray-700 mb-4">Right Hand (Pty) Ltd ("Right Hand", "we", "us") is the responsible party for personal information collected through righthand.org.za, based in Cape Town, South Africa. You can contact us at <a href="mailto:info@righthand.org.za" style={{color: '#1a5ea5'}}>info@righthand.org.za</a>.</p>
 
             <h2 className="text-xl font-bold mt-8 mb-3" style={{color: '#0C447C', borderBottom: '1px solid #E2E0D8', paddingBottom: '8px'}}>2. Information we collect</h2>
             <p className="text-gray-700 mb-3">We collect the following categories of personal information:</p>

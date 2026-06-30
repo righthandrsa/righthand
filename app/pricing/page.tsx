@@ -171,7 +171,7 @@ export default function Pricing() {
               },
               {
                 q: 'Is this legal advice?',
-                a: 'No. RightHand provides consumer rights education for informational purposes only. For advice specific to your situation, consult a qualified South African attorney.',
+                a: 'No. Right Hand provides consumer rights education for informational purposes only. For advice specific to your situation, consult a qualified South African attorney.',
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl p-6" style={{border: '1px solid #c5d8ef'}}>
