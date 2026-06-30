@@ -39,6 +39,7 @@ export default function RootLayout({
               <a href="/learn" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Learn</a>
               <a href="/about" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>About</a>
               <a href="/pricing" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Pricing</a>
+              <a href="/contact" className="hidden sm:inline text-sm px-4 py-2 rounded-lg" style={{color: '#b3d0f0'}}>Contact</a>
               <NavAuth />
             </div>
           </div>
@@ -67,7 +68,7 @@ export default function RootLayout({
               </div>
               {[
                 { heading: 'Learn', links: [['Motor Rights', '/learn#motor-rights'], ['Credit & Debt', '/learn#credit-debt'], ['Banking', '/learn#banking-saving'], ['Tenant Rights', '/learn#tenant-rights']] },
-                { heading: 'Platform', links: [['About', '/about'], ['Pricing', '/pricing'], ['Blog', '#'], ['Contact', '/contact']] },
+                { heading: 'Platform', links: [['About', '/about'], ['Pricing', '/pricing'], ['Contact', '/contact']] },
                 { heading: 'Legal', links: [['Terms of Use', '/terms'], ['Privacy Policy', '/privacy'], ['Disclaimer', '/disclaimer']] },
               ].map((col) => (
                 <div key={col.heading}>
