@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const COMING_SOON = true; // Set to false to take the site live
+const COMING_SOON = false; // Set to false to take the site live
 
 export function middleware(request: NextRequest) {
   if (!COMING_SOON) return NextResponse.next();

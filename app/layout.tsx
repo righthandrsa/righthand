@@ -3,7 +3,7 @@ import { ClerkProvider } from '@clerk/nextjs';
 import NavAuth from './components/NavAuth';
 import "./globals.css";
 
-const COMING_SOON = true;
+const COMING_SOON = false;
 
 export const metadata: Metadata = {
   title: "RightHand — Know Your Consumer Rights",
