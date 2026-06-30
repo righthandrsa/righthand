@@ -1,11 +1,21 @@
 'use client';
 
 import { useAuth } from '@clerk/nextjs';
+import { useState } from 'react';
 import PaystackButton from '../components/PaystackButton';
 import { sections, totalModules } from '../lib/modules';
 
 export default function Pricing() {
   const { isSignedIn } = useAuth();
+  const [billing, setBilling] = useState<'monthly' | 'annual'>('monthly');
+
+  const features = [
+    'All Modules Unlocked',
+    ...sections.map(s => `${s.title} (${s.modules.length} module${s.modules.length !== 1 ? 's' : ''})`),
+    'New modules as they are added',
+    'Cancel anytime, no contracts',
+  ];
+
   return (
     <main>
 
@@ -27,6 +37,40 @@ export default function Pricing() {
       {/* Pricing cards */}
       <section style={{backgroundColor: '#e8f0fa', borderBottom: '1px solid #c5d8ef', padding: '72px 0'}}>
         <div className="max-w-6xl mx-auto px-8">
+
+          {/* Billing toggle */}
+          <div className="flex justify-center mb-10">
+            <div className="flex items-center rounded-xl p-1" style={{backgroundColor: '#ffffff', border: '1px solid #c5d8ef'}}>
+              <button
+                onClick={() => setBilling('monthly')}
+                className="px-5 py-2 rounded-lg text-sm font-semibold transition-all"
+                style={{
+                  backgroundColor: billing === 'monthly' ? '#1a5ea5' : 'transparent',
+                  color: billing === 'monthly' ? '#ffffff' : '#4a5568',
+                  border: 'none',
+                  cursor: 'pointer',
+                }}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setBilling('annual')}
+                className="px-5 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2"
+                style={{
+                  backgroundColor: billing === 'annual' ? '#1a5ea5' : 'transparent',
+                  color: billing === 'annual' ? '#ffffff' : '#4a5568',
+                  border: 'none',
+                  cursor: 'pointer',
+                }}
+              >
+                Annual
+                <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{backgroundColor: billing === 'annual' ? 'rgba(255,255,255,0.2)' : '#e8f0fa', color: billing === 'annual' ? '#ffffff' : '#1a5ea5'}}>
+                  Save R389
+                </span>
+              </button>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto" style={{maxWidth: '680px'}}>
 
             {/* Free */}
@@ -63,25 +107,32 @@ export default function Pricing() {
                 Most popular
               </div>
               <h2 className="font-bold text-lg mb-1" style={{color: '#1a2340'}}>Full Access</h2>
-              <div className="flex items-baseline gap-1 my-3">
-                <span className="text-sm font-semibold" style={{color: '#1a2340'}}>R</span>
-                <span className="text-5xl font-bold" style={{color: '#1a2340'}}>99</span>
-              </div>
-              <div className="text-xs mb-6" style={{color: '#718096'}}>per month · cancel anytime</div>
+              {billing === 'monthly' ? (
+                <>
+                  <div className="flex items-baseline gap-1 my-3">
+                    <span className="text-sm font-semibold" style={{color: '#1a2340'}}>R</span>
+                    <span className="text-5xl font-bold" style={{color: '#1a2340'}}>99</span>
+                  </div>
+                  <div className="text-xs mb-6" style={{color: '#718096'}}>per month · cancel anytime</div>
+                </>
+              ) : (
+                <>
+                  <div className="flex items-baseline gap-1 my-3">
+                    <span className="text-sm font-semibold" style={{color: '#1a2340'}}>R</span>
+                    <span className="text-5xl font-bold" style={{color: '#1a2340'}}>799</span>
+                  </div>
+                  <div className="text-xs mb-6" style={{color: '#718096'}}>per year · save R389 vs monthly</div>
+                </>
+              )}
               <ul className="space-y-3 mb-8">
-                {[
-                  'All Modules Unlocked',
-                  ...sections.map(s => `${s.title} (${s.modules.length} module${s.modules.length !== 1 ? 's' : ''})`),
-                  'New modules as they are added',
-                  'Cancel anytime, no contracts',
-                ].map((f) => (
+                {features.map((f) => (
                   <li key={f} className="text-sm flex items-start gap-2" style={{color: '#4a5568'}}>
                     <span style={{color: '#1a5ea5', fontWeight: 700}}>✓</span> {f}
                   </li>
                 ))}
               </ul>
               {isSignedIn ? (
-                <PaystackButton />
+                <PaystackButton plan={billing} />
               ) : (
                 <a href="/sign-up" className="block text-center py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
                   Get full access
@@ -109,6 +160,10 @@ export default function Pricing() {
               {
                 q: 'What does Full Access include?',
                 a: `All ${totalModules} modules across every topic area: ${sections.map(s => `${s.modules.length} ${s.title}`).join(', ')}. Plus any new modules added in future.`,
+              },
+              {
+                q: 'What is the difference between monthly and annual?',
+                a: 'Both plans give you identical access to all modules. Annual billing costs R799 once a year instead of R99 per month — saving you R389 over 12 months.',
               },
               {
                 q: 'Can I cancel anytime?',
