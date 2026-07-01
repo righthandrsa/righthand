@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server';
+import { render } from '@react-email/components';
+import { resend, FROM, SUPPORT } from '../../lib/resend';
+import ContactAutoReply from '../../lib/emails/ContactAutoReply';
 
 export async function POST(request: Request) {
   try {
@@ -9,29 +12,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      },
-      body: JSON.stringify({
-        from: 'Right Hand Contact Form <noreply@send.righthand.org.za>',
-        to: 'contact@righthand.org.za',
-        reply_to: email,
+    await Promise.all([
+      // Notify the team
+      resend.emails.send({
+        from: FROM,
+        to: SUPPORT,
+        replyTo: email,
         subject: `Right Hand contact: ${subject || 'General enquiry'} — from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
       }),
-    });
+      // Auto-reply to sender
+      resend.emails.send({
+        from: FROM,
+        to: email,
+        subject: 'We received your message — Right Hand',
+        html: await render(ContactAutoReply({ name, subject: subject || '', message })),
+      }),
+    ]);
 
-    if (res.ok) {
-      return NextResponse.json({ success: true });
-    } else {
-      const errorBody = await res.json();
-      console.error('Resend error:', errorBody);
-      return NextResponse.json({ error: 'Failed to send' }, { status: 500 });
-    }
-  } catch {
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error('Contact route error:', error);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }
 }
