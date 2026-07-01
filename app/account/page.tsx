@@ -13,6 +13,21 @@ export default function Account() {
   const isSubscribed = user?.publicMetadata?.subscribed === true;
   const subscribedAt = user?.publicMetadata?.subscribedAt as string | undefined;
   const status = user?.publicMetadata?.subscriptionStatus as string | undefined;
+  const plan = (user?.publicMetadata?.subscriptionPlan as string | undefined) ?? 'monthly';
+  const isAnnual = plan === 'annual';
+
+  function nextBillingDate(from: string): string {
+    const date = new Date(from);
+    const now = new Date();
+    if (isAnnual) {
+      date.setFullYear(date.getFullYear() + 1);
+      while (date < now) date.setFullYear(date.getFullYear() + 1);
+    } else {
+      date.setMonth(date.getMonth() + 1);
+      while (date < now) date.setMonth(date.getMonth() + 1);
+    }
+    return date.toLocaleDateString('en-ZA', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
 
   async function handleCancel() {
     if (!confirm('Are you sure you want to cancel your subscription? You will lose access to paid modules at the end of your billing period.')) return;
@@ -64,12 +79,19 @@ export default function Account() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <span className="text-xs font-bold px-3 py-1 rounded-full" style={{backgroundColor: '#e8f0fa', color: '#1a5ea5'}}>Active</span>
-                    <span className="text-sm font-semibold" style={{color: '#1a2340'}}>Full Access — R99/month</span>
+                    <span className="text-sm font-semibold" style={{color: '#1a2340'}}>
+                      {isAnnual ? 'Full Access — R799/year' : 'Full Access — R99/month'}
+                    </span>
                   </div>
                   {subscribedAt && (
-                    <p className="text-xs" style={{color: '#718096'}}>
-                      Subscribed since {new Date(subscribedAt).toLocaleDateString('en-ZA', {day: 'numeric', month: 'long', year: 'numeric'})}
-                    </p>
+                    <div className="space-y-1">
+                      <p className="text-xs" style={{color: '#718096'}}>
+                        Subscribed since {new Date(subscribedAt).toLocaleDateString('en-ZA', {day: 'numeric', month: 'long', year: 'numeric'})}
+                      </p>
+                      <p className="text-xs" style={{color: '#718096'}}>
+                        Next billing date: <strong style={{color: '#1a2340'}}>{nextBillingDate(subscribedAt)}</strong>
+                      </p>
+                    </div>
                   )}
                   <div style={{borderTop: '1px solid #e2e8f0', paddingTop: '16px'}}>
                     <p className="text-sm mb-4" style={{color: '#4a5568'}}>Need to cancel? Your access will continue until the end of your current billing period.</p>
@@ -98,7 +120,7 @@ export default function Account() {
                   </div>
                   <p className="text-sm" style={{color: '#4a5568'}}>Upgrade to access all modules.</p>
                   <a href="/pricing" className="inline-block px-5 py-2 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
-                    Get full access — R99/month
+                    Get full access
                   </a>
                 </div>
               )}
