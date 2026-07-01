@@ -13,32 +13,32 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing reference' }, { status: 400 });
     }
 
-    // Verify with Paystack
+    // Attempt to verify with Paystack
     const res = await fetch(`https://api.paystack.co/transaction/verify/${reference}`, {
-      headers: {
-        Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`,
-      },
+      headers: { Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}` },
     });
 
     const data = await res.json();
+    const verified = data.status && data.data?.status === 'success';
 
-    if (!data.status || data.data?.status !== 'success') {
-      return NextResponse.json({ error: 'Payment not successful' }, { status: 400 });
+    if (verified) {
+      // Update metadata immediately if we can verify now
+      const client = await clerkClient();
+      await client.users.updateUserMetadata(userId, {
+        publicMetadata: {
+          subscribed: true,
+          subscribedAt: new Date().toISOString(),
+          paystackReference: reference,
+        },
+      });
     }
 
-    // Store subscription status on Clerk user metadata
-    const client = await clerkClient();
-    await client.users.updateUserMetadata(userId, {
-      publicMetadata: {
-        subscribed: true,
-        subscribedAt: new Date().toISOString(),
-        paystackReference: reference,
-      },
-    });
-
+    // Always return success — the charge.success webhook is the reliable
+    // activation path for subscriptions and fires within seconds regardless
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Paystack verify error:', error);
-    return NextResponse.json({ error: 'Server error' }, { status: 500 });
+    // Still redirect — webhook will activate access
+    return NextResponse.json({ success: true });
   }
 }
