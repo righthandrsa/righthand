@@ -1,5 +1,8 @@
+import AuthGate from '../../components/AuthGate';
+
 export default function MotorRights() {
   return (
+    <AuthGate>
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
@@ -254,5 +257,6 @@ export default function MotorRights() {
         </div>
       </div>
     </main>
+    </AuthGate>
   );
 }
