@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { render } from '@react-email/components';
+import { render } from '@react-email/render';
 import { resend, FROM, SUPPORT } from '../../lib/resend';
 import ContactAutoReply from '../../lib/emails/ContactAutoReply';
 

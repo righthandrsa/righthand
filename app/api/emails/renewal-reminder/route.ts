@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { clerkClient } from '@clerk/nextjs/server';
-import { render } from '@react-email/components';
+import { render } from '@react-email/render';
 import { resend, FROM } from '../../../lib/resend';
 import RenewalReminder from '../../../lib/emails/RenewalReminder';
 

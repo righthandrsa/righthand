@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createHmac } from 'crypto';
 import { clerkClient } from '@clerk/nextjs/server';
-import { render } from '@react-email/components';
+import { render } from '@react-email/render';
 import { resend, FROM } from '../../../lib/resend';
 import PaymentReceipt from '../../../lib/emails/PaymentReceipt';
 import PaymentFailed from '../../../lib/emails/PaymentFailed';

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { render } from '@react-email/components';
+import { render } from '@react-email/render';
 import { resend, FROM } from '../../../lib/resend';
 import Welcome from '../../../lib/emails/Welcome';
 
