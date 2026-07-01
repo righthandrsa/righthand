@@ -123,7 +123,7 @@ export default function Home() {
                 name: 'Free',
                 amount: '0',
                 period: 'forever',
-                features: ['First module in every section', 'No sign-up required', 'Read at your own pace'],
+                features: ['First module in every section', 'Free account required', 'Read at your own pace'],
                 cta: 'Start reading',
                 href: '/learn',
                 featured: false,

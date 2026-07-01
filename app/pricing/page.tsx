@@ -88,7 +88,7 @@ export default function Pricing() {
                   'Credit: Credit Report module',
                   'Banking: Bank Saving module',
                   'Tenant Rights: Renting & RHT module',
-                  'No sign-up required',
+                  'Free account required',
                   'Read at your own pace',
                 ].map((f) => (
                   <li key={f} className="text-sm flex items-start gap-2" style={{color: '#4a5568'}}>
