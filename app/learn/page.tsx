@@ -57,6 +57,8 @@ export default function Learn() {
                       <div className="flex items-center gap-3">
                         {mod.free ? (
                           <span className="text-xs font-bold px-2 py-1 rounded-full" style={{backgroundColor: '#e8f0fa', color: '#1a5ea5'}}>Free</span>
+                        ) : isSubscribed ? (
+                          <span className="text-xs font-bold px-2 py-1 rounded-full" style={{backgroundColor: '#e6f4ea', color: '#276c3a'}}>✓ Unlocked</span>
                         ) : (
                           <span className="text-xs font-bold px-2 py-1 rounded-full" style={{backgroundColor: '#1a2340', color: '#b3d0f0'}}>🔒 Members</span>
                         )}
@@ -70,12 +72,14 @@ export default function Learn() {
             ))}
           </div>
 
-          <div className="mt-12 rounded-2xl p-8 text-center" style={{backgroundColor: '#1a2340'}}>
-            <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#8fa8cc'}}>Unlock everything</p>
-            <h3 className="text-2xl font-bold mb-3" style={{color: '#ffffff'}}>Full access for R99/month</h3>
-            <p className="text-sm mb-6" style={{color: '#8fa8cc'}}>All modules, all 4 topic areas. Cancel anytime.</p>
-            <a href="/sign-up" className="inline-block px-8 py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get full access</a>
-          </div>
+          {!isSubscribed && (
+            <div className="mt-12 rounded-2xl p-8 text-center" style={{backgroundColor: '#1a2340'}}>
+              <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: '#8fa8cc'}}>Unlock everything</p>
+              <h3 className="text-2xl font-bold mb-3" style={{color: '#ffffff'}}>Full access for R99/month</h3>
+              <p className="text-sm mb-6" style={{color: '#8fa8cc'}}>All modules, all 4 topic areas. Cancel anytime.</p>
+              <a href="/sign-up" className="inline-block px-8 py-3 rounded-lg font-semibold text-sm" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>Get full access</a>
+            </div>
+          )}
 
         </div>
       </div>
