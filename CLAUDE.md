@@ -169,7 +169,7 @@ Internal API routes protected by `x-internal-secret: INTERNAL_API_SECRET` header
 
 - **Legal audit** (user handling before 1 Aug 2026): terms, privacy policy, disclaimer review
 - **Business operations system**: invoicing, payment tracking, commission management, expense register — to be built as the corporate/ambassador side scales. Likely Supabase + protected admin pages.
-- **Ambassador programme (Pabi Moloi)**: partnership proposal sent. Three options offered (affiliate, corporate BDM, hybrid + phantom equity). Commission 20% individual / 20-25% corporate by contract length. Phantom equity up to 10% via ARR milestones (R150k→2%, R300k→5%, R500k→10%), corporate 24/36-month accounts only, exclusive to her. Referral link tracking and ambassador dashboard not yet built.
+- **Ambassador programme (Pabi Moloi)**: partnership proposal sent. Three options offered (affiliate, corporate BDM, hybrid + phantom equity). Commission 20% individual / 20-25% corporate by contract length. Phantom equity up to 10% via ARR milestones (R150k→2%, R300k→5%, R500k→10%), corporate 24/36-month accounts only. No exclusivity clause — proposal does not promise phantom equity is reserved for her alone. Referral link tracking and ambassador dashboard not yet built.
 - **New content notification**: admin trigger at `/api/emails/new-content` — no UI built yet
 - **Corporate bulk subscription** infrastructure not yet built (pricing agreed, invoicing manual for now)
 
@@ -179,3 +179,95 @@ Internal API routes protected by `x-internal-secret: INTERNAL_API_SECRET` header
 
 - `NODE_VERSION = "20"` required in `netlify.toml` — Next.js 16 + React 19 needs Node ≥20
 - Do not add `publish = ".next"` or `@netlify/plugin-nextjs` — conflicts with Netlify's auto-detected Next.js Runtime
+
+---
+
+## Creator Profile — Darren Campher
+
+Darren is the creator and founder of Right Hand. Include this section in all brand deal, sponsorship, and partnership documents.
+
+### Social Media (as of July 2026 — update when numbers change)
+
+| Platform | Handle | Followers |
+|---|---|---|
+| TikTok | @darrencampher.com | 256,700 |
+| Instagram | @darrencampher.com_ | 42,300 |
+| X (Twitter) | @CampherDarren | 33,000 |
+| YouTube | @Darrencamphercom | Growing |
+| Facebook | — | Rapid growth (~40× in 90 days) |
+| **TOTAL** | All platforms | **340,000+** |
+
+### Key Metrics
+- 13.1M TikTok views (12 months)
+- 12.6M unique users reached organically
+- 3.5M single video peak views (also 2.8M and 1.8M)
+- 59% of Instagram views from non-followers
+- 56% of Instagram interactions from non-followers
+- **0% paid media spend — fully organic**
+
+### Awards & Recognition
+- DStv Content Creator Awards 2024 — Social Commentary Award Winner
+- National press: IOL / Cape Argus (June & November 2024), City Press (October 2024)
+- Podcast guest: Sizwe Mpofu-Walsh and others
+
+### Contact (use both in all documents)
+- info@DarrenCampher.com
+- info@righthand.org.za
+
+---
+
+## Brand Deals & Sponsorships
+
+Saved documents: `/Users/darrencampher/Desktop/RightHand.org.za/Brand Deals & Sponsorships/`
+
+Generator scripts (Node.js, uses `docx` npm package):
+- `/private/tmp/.../scratchpad/proposal/vehicle_sponsor.js` → `RightHand_Vehicle_Sponsorship_Proposal.docx`
+
+### Document Rules (apply to all brand/sponsorship proposals)
+- **Do not include** Right Hand subscription pricing or topic area count in partner-facing documents
+- Campaign window: **July/August 2026**, runs July to Sept/Oct 2026
+- Always list both contact emails: info@DarrenCampher.com and info@righthand.org.za
+- Frame all content as "education first, promotion second — never hard-sell advertising"
+- Lead with organic reach (0% paid spend) as the credibility differentiator
+- The **59% non-follower Instagram stat** is the strongest hook for brand partners — always include it
+
+### Vehicle Sponsorship Proposal (completed July 2026)
+- Sent to dealerships — 5 business day response deadline
+- Ask: short-term vehicle loan (2–3 months), no cash payment
+- Deliverables: 1–2 videos/week, dealership services review, vehicle finance content, branded vehicle visibility, Linktree placement, resharing rights
+- One exclusivity slot per vehicle category
+- Dealership branding applied to vehicle exterior for loan period
+
+---
+
+## Pabi Moloi Partnership
+
+Proposal sent July 2026. Three options offered:
+
+**Option A — Affiliate**
+- 20% commission on individual subscriber referrals (R99/mo plan)
+- No retainer, no equity
+
+**Option B — Corporate BDM**
+- Commission by contract length: 20% (12-month) / 22% (24-month) / 25% (36-month)
+- Volume discounts to corporate clients: 5% / 10% / 15% / 20% by company size
+- Annual upfront billing required for volume discount (cash flow protection)
+- Price lock for client; ratchet up if they grow, never down
+
+**Option C — Hybrid + Phantom Equity**
+- All of Option A + B commissions
+- Phantom equity up to 10% via ARR milestones (corporate qualifying accounts only):
+  - R150,000 ARR → 2% phantom equity
+  - R300,000 ARR → 5% phantom equity
+  - R500,000 ARR → 10% phantom equity
+- Qualifying corporate account: 24/36-month contract, minimum 21 seats, minimum R25,000 ACV
+- Phantom equity = contractual economic right only. No voting rights, no decision-making, no share ownership, never on CIPC register
+- Vesting: 24 months from each milestone, 6-month cliff
+- Buy-back right: Right Hand can buy back at fair market value if partnership ends
+- No exclusivity clause — proposal does not promise phantom equity is reserved for Pabi alone
+
+**Key decisions made:**
+- Phantom equity chosen over actual preference shares
+- No exclusivity clause included (deliberate — removed from final proposal)
+- Individual subscriber referrals do not count toward equity milestones
+- All material equity terms included in the proposal itself (not deferred) to prevent future disputes
