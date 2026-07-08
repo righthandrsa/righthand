@@ -11,7 +11,7 @@ export default function Pricing() {
 
   const features = [
     'All Modules Unlocked',
-    ...sections.map(s => `${s.title} (${s.modules.length} module${s.modules.length !== 1 ? 's' : ''})`),
+    ...sections.map(s => s.title),
     'New modules as they are added',
     'Cancel anytime, no contracts',
   ];
