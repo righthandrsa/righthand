@@ -1,4 +1,4 @@
-import { totalModules, totalSections } from './lib/modules';
+import { totalModules, totalSections, sections } from './lib/modules';
 
 export default function Home() {
   return (
@@ -66,19 +66,17 @@ export default function Home() {
             <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>{totalSections} areas of consumer rights</h2>
             <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law: the CPA, NCA, RHA, PPRA, and more.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { icon: '🚗', title: 'Motor Rights', desc: 'CPA rights, defects, finance and dealer obligations.', href: '/learn#motor-rights' },
-              { icon: '💳', title: 'Credit & Debt', desc: 'Reckless lending, credit reports and debt review.', href: '/learn#credit-debt' },
-              { icon: '🏦', title: 'Banking & Saving', desc: 'TFSA accounts and savings products.', href: '/learn#banking-saving' },
-              { icon: '🏠', title: 'Tenant Rights', desc: 'Tenant rights, deposits, the RHT and the PPRA.', href: '/learn#tenant-rights' },
-            ].map((topic) => (
-              <a key={topic.title} href={topic.href} className="block rounded-2xl p-6 transition" style={{backgroundColor: 'rgba(255,255,255,0.11)', border: '1px solid rgba(255,255,255,0.18)'}}>
-                <div className="text-2xl mb-3">{topic.icon}</div>
-                <h3 className="font-bold mb-1" style={{color: '#ffffff', fontSize: '0.95rem'}}>{topic.title}</h3>
-                <p className="text-xs leading-relaxed" style={{color: 'rgba(255,255,255,0.65)'}}>{topic.desc}</p>
-              </a>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {sections.map((section) => {
+              const anchor = section.title.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '');
+              return (
+                <a key={section.title} href={`/learn#${anchor}`} className="block rounded-2xl p-6 transition" style={{backgroundColor: 'rgba(255,255,255,0.11)', border: '1px solid rgba(255,255,255,0.18)'}}>
+                  <div className="text-2xl mb-3">{section.emoji}</div>
+                  <h3 className="font-bold mb-1" style={{color: '#ffffff', fontSize: '0.95rem'}}>{section.title}</h3>
+                  <p className="text-xs leading-relaxed" style={{color: 'rgba(255,255,255,0.65)'}}>{section.description}</p>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
