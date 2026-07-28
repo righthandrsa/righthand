@@ -17,7 +17,7 @@ export default function Home() {
                 <span style={{color: '#b3d0f0'}}>Stand your ground.</span>
               </h1>
               <p className="text-lg mb-8 leading-relaxed" style={{color: '#8fa8cc', maxWidth: '460px'}}>
-                Right Hand turns South African consumer law into plain-language lessons covering motor, credit, banking, and tenant rights.
+                Right Hand turns South African consumer law into plain-language lessons covering motor, credit, banking, tenant rights, and tax.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a href="/learn" className="px-7 py-3 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
