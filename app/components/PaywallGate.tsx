@@ -45,7 +45,7 @@ export default function PaywallGate({ children }: { children: React.ReactNode })
               <span className="text-sm" style={{color: '#8fa8cc'}}>/month</span>
             </div>
             <ul className="text-sm space-y-2 mb-8 text-left" style={{color: '#8fa8cc'}}>
-              {{['All modules unlocked', `All ${totalSections} topic areas`, 'New modules as added', 'Cancel anytime']}.map(f => (
+              {['All modules unlocked', `All ${totalSections} topic areas`, 'New modules as added', 'Cancel anytime'].map(f => (
                 <li key={f} className="flex items-center gap-2">
                   <span style={{color: '#1a5ea5', fontWeight: 700}}>✓</span> {f}
                 </li>
