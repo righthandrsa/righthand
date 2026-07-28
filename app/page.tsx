@@ -1,4 +1,4 @@
-import { totalModules } from './lib/modules';
+import { totalModules, totalSections } from './lib/modules';
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
                   <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>modules available</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>4</div>
+                  <div className="text-2xl font-bold" style={{color: '#b3d0f0'}}>{totalSections}</div>
                   <div className="text-xs mt-1" style={{color: '#8fa8cc'}}>topic areas</div>
                 </div>
                 <div>
