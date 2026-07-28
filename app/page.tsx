@@ -63,7 +63,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-10">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{color: 'rgba(255,255,255,0.6)'}}>What you will learn</div>
-            <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>Four areas of consumer rights</h2>
+            <h2 className="text-3xl font-bold" style={{color: '#ffffff'}}>{totalSections} areas of consumer rights</h2>
             <p className="mt-2 text-sm" style={{color: 'rgba(255,255,255,0.65)'}}>Every topic grounded in South African law: the CPA, NCA, RHA, PPRA, and more.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

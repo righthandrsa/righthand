@@ -155,7 +155,7 @@ export default function Pricing() {
             {[
               {
                 q: 'Which modules are free?',
-                a: 'The first module in each of the four topic areas is always free — no sign-up needed. That gives you Motor Rights (Module 1), Credit Report, Bank Saving, and Renting & the RHT.',
+                a: 'The first module in each of the five topic areas is always free — no sign-up needed. That gives you Motor Rights (Module 1), Credit Report, Bank Saving, Renting & the RHT, and Getting SARS-Ready.',
               },
               {
                 q: 'What does Full Access include?',
