@@ -231,6 +231,13 @@ Generator scripts (Node.js, uses `docx` npm package):
 - Lead with organic reach (0% paid spend) as the credibility differentiator
 - The **59% non-follower Instagram stat** is the strongest hook for brand partners — always include it
 
+### Generic Partnership/BDM Templates (created July 2026)
+- Saved to `/Users/darrencampher/Desktop/RightHand.org.za/Brand Deals & Sponsorships/`
+- `RightHand_Affiliate_Partnership_Proposal_Template.docx` — Option A terms only (individual referral commission), generic `[Partner Name]` / `[Date]` placeholders
+- `RightHand_Corporate_BDM_Partnership_Proposal_Template.docx` — Option B terms only (corporate BDM, pricing matrix, commission by contract length), generic placeholders
+- Both deliberately exclude phantom equity (Option C) — that structure stays specific to the Pabi Moloi proposal
+- Proposal-style term sheets (non-binding), not signable legal contracts — matches the style of the Pabi proposal
+
 ### Vehicle Sponsorship Proposal (completed July 2026)
 - Sent to dealerships — 5 business day response deadline
 - Ask: short-term vehicle loan (2–3 months), no cash payment

@@ -37,6 +37,15 @@ export const sections = [
       { title: 'The PPRA Explained: How to Use It and When to Complain', free: false, slug: 'ppra' },
     ],
   },
+  {
+    emoji: '🧾',
+    title: 'Tax',
+    description: 'Most South Africans either overpay, underpay, or get caught out — simply because no one explained how tax actually works.',
+    modules: [
+      { title: 'Getting SARS-Ready: Your Profile, eFiling, and Document Readiness', free: true, slug: 'tax-sars-profile' },
+      { title: 'Provisional Tax for Individuals: Freelancers, Side Hustles and Rental Income', free: false, slug: 'tax-provisional' },
+    ],
+  },
 ];
 
 export const totalModules = sections.reduce((acc, s) => acc + s.modules.length, 0);
