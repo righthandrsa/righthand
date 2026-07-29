@@ -198,18 +198,6 @@ export default function TaxProvisional() {
             </article>
 
             <aside style={{position:'sticky',top:'80px'}}>
-              <div className="rounded-2xl overflow-hidden" style={{border:'1px solid #c5d8ef'}}>
-                <div style={{backgroundColor:'#1a2340',padding:'14px 18px'}}>
-                  <p className="text-xs font-bold tracking-widest uppercase" style={{color:'#8fa8cc'}}>Content contributor</p>
-                </div>
-                <div style={{backgroundColor:'#f0f5fc',padding:'20px'}}>
-                  <p className="font-bold text-sm mb-1" style={{color:'#1a2340'}}>Alston Swarts</p>
-                  <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Tax contributor</p>
-                  <div className="mt-4 pt-4 text-xs leading-relaxed" style={{borderTop:'1px solid #c5d8ef',color:'#718096'}}>
-                    Content provided for educational purposes only. Consult a registered tax practitioner for personal tax guidance.
-                  </div>
-                </div>
-              </div>
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
                 <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Tax · Module 1</p>
