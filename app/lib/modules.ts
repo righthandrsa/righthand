@@ -17,6 +17,8 @@ export const sections = [
       { title: 'Getting Out of Debt Review', free: false, slug: 'credit-debt-review' },
       { title: 'The Ghost Debt Trap: How Old Debt Expires', free: false, slug: 'credit-prescription' },
       { title: 'Reckless Lending and Your Credit Rights', free: false, slug: 'credit-reckless' },
+      { title: 'Debt Review Removal: The Legal Reality', free: false, slug: 'credit-debt-removal' },
+      { title: 'Fraudulent Debt Review: How to Fight Back', free: false, slug: 'credit-debt-fraud' },
     ],
   },
   {
