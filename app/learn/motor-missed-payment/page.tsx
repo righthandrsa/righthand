@@ -6,7 +6,7 @@ export default function MotorMissedPayment() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Rights · Module 3 of 4</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 3 of 5</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Missed a Car Payment? Here&apos;s What Happens and What to Do</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 8 min read · Last reviewed July 2026</p>
         </div>
@@ -127,7 +127,7 @@ export default function MotorMissedPayment() {
               </div>
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
-                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Motor Rights</p>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Motor Vehicles</p>
                 <a href="/learn/motor-settle-early" className="text-sm font-medium" style={{color:'#ffffff'}}>Settling Your Car Early →</a>
               </div>
             </aside>

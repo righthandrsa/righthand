@@ -1,7 +1,7 @@
 export const sections = [
   {
     emoji: '🚗',
-    title: 'Motor Rights',
+    title: 'Motor Vehicles',
     description: 'Most car buyers do not know what the law actually entitles them to. These modules change that.',
     modules: [
       { title: 'Your Rights When Buying a Vehicle', free: true, slug: 'motor-rights' },
@@ -35,7 +35,7 @@ export const sections = [
   },
   {
     emoji: '🏠',
-    title: 'Tenant Rights',
+    title: 'Property',
     description: 'Your landlord has rules to follow too. Most tenants just do not know what they are.',
     modules: [
       { title: 'Renting in SA: Your Rights and the Rental Housing Tribunal', free: true, slug: 'renting-rht' },

@@ -6,7 +6,7 @@ export default function RentingRHT() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Home · Module 1 of 2</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Property · Module 1 of 2</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Renting in South Africa: Your Rights and the Rental Housing Tribunal</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 18 min read · Last reviewed June 2026</p>
         </div>

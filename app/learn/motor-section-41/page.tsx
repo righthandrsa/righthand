@@ -6,7 +6,7 @@ export default function MotorSection41() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Rights · Module 5 of 5</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 5 of 5</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Section 41 of the CPA: What Dealerships Cannot Say or Hide</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 12 min read · Last reviewed July 2026</p>
         </div>
@@ -215,7 +215,7 @@ export default function MotorSection41() {
               </div>
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
-                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Motor Rights</p>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Motor Vehicles</p>
                 <a href="/learn/motor-settle-early" className="text-sm font-medium" style={{color:'#ffffff'}}>← Settling Your Car Early</a>
               </div>
             </aside>

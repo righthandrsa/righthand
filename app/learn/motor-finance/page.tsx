@@ -5,7 +5,7 @@ export default function MotorFinance() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor · Module 2 of 2</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 2 of 5</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Vehicle Finance, Warranties and Insurance: What the Industry Won't Always Tell You</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 22 min read · Last reviewed June 2026</p>
         </div>

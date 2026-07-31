@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs';
 import NavAuth from './components/NavAuth';
+import { sections } from './lib/modules';
 import "./globals.css";
 
 const COMING_SOON = false;
@@ -67,9 +68,9 @@ export default function RootLayout({
                 </p>
               </div>
               {[
-                { heading: 'Learn', links: [['Motor Rights', '/learn#motor-rights'], ['Credit & Debt', '/learn#credit-debt'], ['Banking', '/learn#banking-saving'], ['Tenant Rights', '/learn#tenant-rights']] },
-                { heading: 'Platform', links: [['About', '/about'], ['Pricing', '/pricing'], ['Contact', '/contact']] },
-                { heading: 'Legal', links: [['Terms of Use', '/terms'], ['Privacy Policy', '/privacy'], ['Disclaimer', '/disclaimer']] },
+                { heading: 'Learn', links: sections.map(s => [s.title, `/learn#${s.title.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}`] as [string, string]) },
+                { heading: 'Platform', links: [['About', '/about'], ['Pricing', '/pricing'], ['Contact', '/contact']] as [string, string][] },
+                { heading: 'Legal', links: [['Terms of Use', '/terms'], ['Privacy Policy', '/privacy'], ['Disclaimer', '/disclaimer']] as [string, string][] },
               ].map((col) => (
                 <div key={col.heading}>
                   <h5 className="text-xs font-bold tracking-widest uppercase mb-4" style={{color: '#b3d0f0'}}>{col.heading}</h5>

@@ -17,7 +17,7 @@ export default function Home() {
                 <span style={{color: '#b3d0f0'}}>Stand your ground.</span>
               </h1>
               <p className="text-lg mb-8 leading-relaxed" style={{color: '#8fa8cc', maxWidth: '460px'}}>
-                Right Hand turns South African consumer law into plain-language lessons covering motor, credit, banking, tenant rights, and tax.
+                Right Hand turns South African consumer law into plain-language lessons covering motor vehicles, credit, banking, property, and tax.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a href="/learn" className="px-7 py-3 rounded-lg font-semibold" style={{backgroundColor: '#1a5ea5', color: '#ffffff'}}>
@@ -44,9 +44,9 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-3">
               {[
-                { label: 'Motor Rights', title: "Defective vehicle? Here's what the CPA says." },
+                { label: 'Motor Vehicles', title: "Defective vehicle? Here's what the CPA says." },
                 { label: 'Credit & Debt', title: 'What counts as reckless lending under the NCA?' },
-                { label: 'Tenant Rights', title: 'Deposit rules your landlord must follow.' },
+                { label: 'Property', title: 'Deposit rules your landlord must follow.' },
               ].map((card) => (
                 <div key={card.label} className="rounded-xl p-5" style={{backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)'}}>
                   <div className="text-xs font-bold tracking-widest uppercase mb-1" style={{color: '#8fa8cc'}}>{card.label}</div>
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you: motor, credit, banking, or tenant rights.' },
+              { n: '1', title: 'Choose a topic', desc: 'Pick the area that affects you: motor vehicles, credit, banking, or property.' },
               { n: '2', title: 'Learn YOUR Rights', desc: 'Clear modules written in plain language, no legal jargon.' },
               { n: '3', title: 'Know THEIR Obligations', desc: 'Understand exactly what dealers, creditors, and landlords must do.' },
               { n: '4', title: 'Act with confidence', desc: 'Use our knowledge to stand up for yourself.' },
