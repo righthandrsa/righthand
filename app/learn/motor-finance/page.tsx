@@ -247,7 +247,7 @@ export default function MotorFinance() {
                   <p className="text-xs mb-3" style={{color:'#1a5ea5'}}>Finance and Insurance Specialist</p>
                   <div className="space-y-2 text-xs" style={{color:'#4a5568'}}>
                     <div><a href="mailto:kyle@pengellyautos.co.za" style={{color:'#1a5ea5'}}>kyle@pengellyautos.co.za</a></div>
-                    <div><a href="https://pengellyautos.co.za" target="_blank" rel="noopener noreferrer" style={{color:'#1a5ea5'}}>pengellyautos.co.za</a></div>
+                    <div><a href="https://kylepengelly.co.za" target="_blank" rel="noopener noreferrer" style={{color:'#1a5ea5'}}>kylepengelly.co.za</a></div>
                   </div>
                   <div className="mt-4 pt-4 text-xs leading-relaxed" style={{borderTop:'1px solid #c5d8ef',color:'#718096'}}>
                     Content provided for educational purposes only. Contact Pengelly Autos directly for vehicle finance and insurance guidance.

@@ -6,6 +6,8 @@ export const sections = [
     modules: [
       { title: 'Your Rights When Buying a Vehicle', free: true, slug: 'motor-rights' },
       { title: 'Vehicle Finance, Warranties and Insurance', free: false, slug: 'motor-finance' },
+      { title: 'Missed a Car Payment? Here\'s What Happens and What to Do', free: false, slug: 'motor-missed-payment' },
+      { title: 'Settling Your Car Early: What It Costs and How to Avoid Penalties', free: false, slug: 'motor-settle-early' },
     ],
   },
   {
