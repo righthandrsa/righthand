@@ -8,6 +8,7 @@ export const sections = [
       { title: 'Vehicle Finance, Warranties and Insurance', free: false, slug: 'motor-finance' },
       { title: 'Missed a Car Payment? Here\'s What Happens and What to Do', free: false, slug: 'motor-missed-payment' },
       { title: 'Settling Your Car Early: What It Costs and How to Avoid Penalties', free: false, slug: 'motor-settle-early' },
+      { title: 'Section 41 of the CPA: What Dealerships Cannot Say or Hide', free: false, slug: 'motor-section-41' },
     ],
   },
   {
