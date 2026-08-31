@@ -49,6 +49,8 @@ export const sections = [
     modules: [
       { title: 'Getting SARS-Ready: Your Profile, eFiling, and Document Readiness', free: true, slug: 'tax-sars-profile' },
       { title: 'Provisional Tax for Individuals: Freelancers, Side Hustles and Rental Income', free: false, slug: 'tax-provisional' },
+      { title: 'From Auto-Assessment to Verification: A Practical Guide for Individual Taxpayers', free: false, slug: 'tax-auto-assessment' },
+      { title: 'Medical Tax Credits and Out-of-Pocket Medical Expenses Explained', free: false, slug: 'tax-medical-credits' },
     ],
   },
 ];

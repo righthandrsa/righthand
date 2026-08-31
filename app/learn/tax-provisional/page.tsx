@@ -6,7 +6,7 @@ export default function TaxProvisional() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Tax · Module 2 of 2</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Tax · Module 2 of 4</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Provisional Tax for Individuals: Freelancers, Side Hustles and Rental Income</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 15 min read · Last reviewed July 2026</p>
         </div>
@@ -214,8 +214,12 @@ export default function TaxProvisional() {
               </div>
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
-                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Tax · Module 1</p>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Tax</p>
                 <a href="/learn/tax-sars-profile" className="text-sm font-medium" style={{color:'#ffffff'}}>← Getting SARS-Ready</a>
+              </div>
+              <div className="rounded-xl mt-3 p-4" style={{backgroundColor:'#1a2340'}}>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Tax</p>
+                <a href="/learn/tax-auto-assessment" className="text-sm font-medium" style={{color:'#ffffff'}}>Auto-Assessment to Verification →</a>
               </div>
             </aside>
           </div>
