@@ -55,6 +55,7 @@ export const sections = [
       { title: 'Provisional Tax for Individuals: Freelancers, Side Hustles and Rental Income', free: false, slug: 'tax-provisional' },
       { title: 'From Auto-Assessment to Verification: A Practical Guide for Individual Taxpayers', free: false, slug: 'tax-auto-assessment' },
       { title: 'Medical Tax Credits and Out-of-Pocket Medical Expenses Explained', free: false, slug: 'tax-medical-credits' },
+      { title: 'Objections, Disputes, and What to Do When SARS Gets It Wrong', free: false, slug: 'tax-objections-disputes' },
     ],
   },
 ];

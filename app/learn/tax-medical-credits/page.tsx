@@ -6,7 +6,7 @@ export default function TaxMedicalCredits() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Tax · Module 4 of 4</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Tax · Module 4 of 5</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Medical Tax Credits and Out-of-Pocket Medical Expenses Explained</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 12 min read · Last reviewed August 2026</p>
         </div>
@@ -252,6 +252,10 @@ export default function TaxMedicalCredits() {
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
                 <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Tax</p>
                 <a href="/learn/tax-auto-assessment" className="text-sm font-medium" style={{color:'#ffffff'}}>← Auto-Assessment to Verification</a>
+              </div>
+              <div className="rounded-xl mt-3 p-4" style={{backgroundColor:'#1a2340'}}>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Tax</p>
+                <a href="/learn/tax-objections-disputes" className="text-sm font-medium" style={{color:'#ffffff'}}>When SARS Gets It Wrong →</a>
               </div>
             </aside>
           </div>
