@@ -6,7 +6,7 @@ export default function MotorSettleEarly() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 4 of 5</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 4 of 8</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Settling Your Car Early: What It Costs and How to Avoid Penalties</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 8 min read · Last reviewed July 2026</p>
         </div>

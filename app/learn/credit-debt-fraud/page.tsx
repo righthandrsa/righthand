@@ -6,7 +6,7 @@ export default function CreditDebtFraud() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Credit &amp; Debt · Module 6 of 6</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Credit &amp; Debt · Module 6 of 7</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Fraudulent Debt Review: How to Fight Back</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 15 min read · Last reviewed July 2026</p>
         </div>
@@ -229,7 +229,11 @@ export default function CreditDebtFraud() {
               <a href="/learn" className="flex items-center gap-2 mt-4 text-sm font-medium" style={{color:'#1a5ea5'}}>← Back to all modules</a>
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
                 <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Credit &amp; Debt</p>
-                <a href="/learn/credit-debt-removal" className="text-sm font-medium" style={{color:'#ffffff'}}>← Debt Review Removal: The Legal Reality</a>
+                <a href="/learn/credit-debt-removal" className="text-sm font-medium" style={{color:'#ffffff'}}>← Debt Review Removal</a>
+              </div>
+              <div className="rounded-xl mt-3 p-4" style={{backgroundColor:'#1a2340'}}>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Credit &amp; Debt</p>
+                <a href="/learn/credit-score-guide" className="text-sm font-medium" style={{color:'#ffffff'}}>Your Credit Score →</a>
               </div>
             </aside>
           </div>

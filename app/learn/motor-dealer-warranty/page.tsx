@@ -6,7 +6,7 @@ export default function MotorDealerWarranty() {
     <main>
       <div style={{backgroundColor:'#1a5ea5',padding:'48px 0 40px'}}>
         <div className="max-w-6xl mx-auto px-8">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 6 of 6</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{color:'rgba(255,255,255,0.65)'}}>Motor Vehicles · Module 6 of 8</p>
           <h1 className="text-3xl font-bold mb-3" style={{color:'#ffffff'}}>Dealer or Private Seller, and How to Think About Extended Warranties</h1>
           <p style={{color:'rgba(255,255,255,0.7)',fontSize:'0.88rem'}}>Approx. 6 min read · Last reviewed August 2026</p>
         </div>
@@ -171,6 +171,10 @@ export default function MotorDealerWarranty() {
               <div className="rounded-xl mt-4 p-4" style={{backgroundColor:'#1a2340'}}>
                 <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Motor Vehicles</p>
                 <a href="/learn/motor-section-41" className="text-sm font-medium" style={{color:'#ffffff'}}>← Section 41 of the CPA</a>
+              </div>
+              <div className="rounded-xl mt-3 p-4" style={{backgroundColor:'#1a2340'}}>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Motor Vehicles</p>
+                <a href="/learn/motor-third-party-finance" className="text-sm font-medium" style={{color:'#ffffff'}}>Third Party Finance →</a>
               </div>
             </aside>
           </div>
