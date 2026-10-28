@@ -281,6 +281,10 @@ export default function CreditScoreGuide() {
                 <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Previous in Credit &amp; Debt</p>
                 <a href="/learn/credit-debt-fraud" className="text-sm font-medium" style={{color:'#ffffff'}}>← Fraudulent Debt Review</a>
               </div>
+              <div className="rounded-xl mt-3 p-4" style={{backgroundColor:'#1a2340'}}>
+                <p className="text-xs font-bold mb-2" style={{color:'#8fa8cc'}}>Next in Credit &amp; Debt</p>
+                <a href="/learn/credit-section-127" className="text-sm font-medium" style={{color:'#ffffff'}}>The Vehicle Shortfall Trap →</a>
+              </div>
             </aside>
           </div>
         </div>

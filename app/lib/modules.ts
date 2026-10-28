@@ -26,6 +26,7 @@ export const sections = [
       { title: 'Debt Review Removal: The Legal Reality', free: false, slug: 'credit-debt-removal' },
       { title: 'Fraudulent Debt Review: How to Fight Back', free: false, slug: 'credit-debt-fraud' },
       { title: 'Your Credit Score: What Builds It, What Breaks It, and How to Take Control', free: false, slug: 'credit-score-guide' },
+      { title: 'The Vehicle Shortfall Trap: Repossession vs. Section 127 Voluntary Surrender', free: false, slug: 'credit-section-127' },
     ],
   },
   {
